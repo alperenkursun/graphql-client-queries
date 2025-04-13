@@ -10,4 +10,7 @@
 .events {
   width: 800px;
   min-height: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }

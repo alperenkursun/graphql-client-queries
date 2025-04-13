@@ -8,7 +8,7 @@ function App() {
     <div className="app">
       <Routes>
         <Route index element={<Events />} />
-        <Route path="eventDetail" element={<EventDetail />} />
+        <Route path="eventDetail/:id" element={<EventDetail />} />
       </Routes>
     </div>
   );

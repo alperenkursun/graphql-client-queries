@@ -1,6 +1,7 @@
+import { Link } from "react-router";
 import "./Event.css";
 
-function Event({ name, desc, date }) {
+function Event({ id, name, desc, date }) {
   return (
     <div className="event">
       <div className="event-top">
@@ -9,9 +10,9 @@ function Event({ name, desc, date }) {
       </div>
       <p className="event-desc">{desc}</p>
       <div className="event-bottom">
-        <a className="event-details" href="#">
+        <Link to={`/eventDetail/${id}`} className="event-details">
           Details
-        </a>
+        </Link>
       </div>
     </div>
   );
